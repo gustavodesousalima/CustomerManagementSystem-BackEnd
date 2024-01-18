@@ -76,7 +76,7 @@ http://localhost:5001/clientes/listcustomers
 		},
   
 		{
-		   "name": "Jo'",
+		   "name": "João",
 		    "telefone": (11)111111111,
 		    "email": "teste12@gmail.com",
         	    "coord_x": "3",
