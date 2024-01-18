@@ -13,7 +13,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Conecta as rotas
-app.use('/clientes', customersRoutes);
+app.use('/', customersRoutes);
 
 app.listen(PORT, () => {
     console.log(`Servidor rodando em http://localhost:${PORT}/clientes/`);
