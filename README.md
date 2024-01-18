@@ -8,13 +8,34 @@ Antes de começar, certifique-se de ter o seguinte instalado em sua máquina:
 
 - Node.js
 - PostgreSQL
+- PostgreSQL Client
 
-## Instalação e Configuração
+### Instalando o PostgreSQL Client
 
-1. Clone o repositório:
+Para executar comandos SQL no banco de dados, é necessário ter o PostgreSQL Client instalado. Siga as instruções abaixo para instalar o cliente:
 
-   ```bash
-   git clone https://github.com/gustavodesousalima/CustomerManagementSystem-BackEnd.git
+#### Em sistemas Debian/Ubuntu:
+
+```bash
+sudo apt-get update
+sudo apt-get install postgresql-client
+
+Em sistemas Red Hat/Fedora:
+bash
+Copy code
+sudo dnf install postgresql
+Em sistemas MacOS:
+bash
+Copy code
+brew install postgresql
+Em sistemas Windows:
+Você pode baixar o PostgreSQL Client a partir do site oficial: Download PostgreSQL Client
+
+Instalação e Configuração
+
+Clone o repositório:
+
+git clone https://github.com/gustavodesousalima/CustomerManagementSystem-BackEnd.git
 
 Acesse o diretório do projeto:
 
@@ -44,8 +65,7 @@ const pool = new Pool({
 });
 
 Inicie o servidor:
-
-npm run start
+npm start
 
 O servidor estará disponível em http://localhost:5001/clientes/.
 
