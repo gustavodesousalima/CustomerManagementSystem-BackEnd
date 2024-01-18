@@ -1,9 +1,16 @@
 import pkg from 'pg';
 const { Pool } = pkg;
 
-const pool = new Pool({
-  connectionString: 'postgres://oorkvbla:eHNh-9bYOWlhDfk1eAklFNw2n3Qrp-Nb@tuffi.db.elephantsql.com/oorkvbla'
-});
+// Configurações do banco de dados
+const dbConfig = {
+  user: 'seu-usuario',
+  host: 'localhost',
+  database: 'seu-banco-de-dados',
+  password: 'sua-senha',
+  port: 5432,
+};
+
+const pool = new Pool(dbConfig);
 
 // Adicione um evento para verificar quando a conexão é estabelecida
 pool.on('connect', () => {
