@@ -70,16 +70,16 @@ http://localhost:5001/clientes/listcustomers
 		{
 		    "name": "Vitor",
 		    "telefone": (11)000000000,
-		    "email": "teste@gmail.com"
-        	    "coord_x": "1"
+		    "email": "teste@gmail.com",
+        	    "coord_x": "1",
         	    "coord_y": "2"
 		},
   
 		{
 		   "name": "Jo'",
 		    "telefone": (11)111111111,
-		    "email": "teste12@gmail.com"
-        	    "coord_x": "3"
+		    "email": "teste12@gmail.com",
+        	    "coord_x": "3",
                     "coord_y": "7"
 		}
 		....
