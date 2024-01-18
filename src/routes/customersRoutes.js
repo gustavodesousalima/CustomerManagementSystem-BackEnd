@@ -1,11 +1,15 @@
-import express, { Router } from 'express';
+import express from 'express';
+import { getCustomers, registerCustomer, calculateRoute } from '../controllers/customersControllers.js';
+
 const router = express.Router();
-import { getCustomers, registerCustomer } from '../controllers/customersControllers.js';
 
 // Rota para listar os clientes
-router.get('/', getCustomers);
+router.get('/get', getCustomers);
 
 // Rota para cadastrar um cliente
-router.post('/', registerCustomer);
+router.post('/post', registerCustomer);
+
+// Nova rota para calcular a rota mais curta
+router.get('/calculate', calculateRoute);
 
 export default router;
