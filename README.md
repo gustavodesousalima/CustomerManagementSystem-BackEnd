@@ -24,6 +24,14 @@ Instale as dependências:
 
 npm install
 
+DDL (Data Definition Language) no Projeto:
+
+O arquivo src/config/create_table_customers.sql contém o script DDL necessário para criar a tabela do banco de dados. Certifique-se de executar este script no PostgreSQL para configurar a estrutura do banco de dados.
+
+bash
+Copy code
+psql -U seu-usuario -d seu-banco-de-dados -a -f src/ddl.sql
+
 Configure o banco de dados PostgreSQL:
 
 Abra o arquivo src/config/db.js e atualize as informações de conexão com o banco de dados (host, user, password, database).
