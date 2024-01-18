@@ -33,6 +33,20 @@ O arquivo src/config/create_table_customers.sql contém o script DDL necessário
    ```bash
    $ cd customermanagementsystem-backend
 
+   ### Configure o banco de dados PostgreSQL:
+
+Abra o arquivo src/config/db.js e atualize as informações de conexão com o banco de dados (host, user, password, database).
+
+```jsx
+const pool = new Pool({
+  user: 'seu-usuario',
+  host: 'localhost',
+  database: 'seu-banco-de-dados',
+  password: 'sua-senha',
+  port: 5432,
+});
+```
+
 Execute o script DDL no PostgreSQL para configurar a estrutura do banco de dados. Substitua <seu-usuario>, <seu-host>, <seu-banco-de-dados> pelos seus próprios valores:
 
  $ psql -U <seu-usuario> -h <seu-host> -d <seu-banco-de-dados> -W -a -f src/config/create_table_customers.sql
@@ -49,19 +63,6 @@ simultaneamente para o correto funcionamento do sistema. Certifique-se de ajusta
 as configurações do banco de dados no arquivo src/config/db.js conforme necessário.
 ```
 
-### Configure o banco de dados PostgreSQL:
-
-Abra o arquivo src/config/db.js e atualize as informações de conexão com o banco de dados (host, user, password, database).
-
-```jsx
-const pool = new Pool({
-  user: 'seu-usuario',
-  host: 'localhost',
-  database: 'seu-banco-de-dados',
-  password: 'sua-senha',
-  port: 5432,
-});
-```
 ## Listar todos os clientes.
 
 *method : GET*
