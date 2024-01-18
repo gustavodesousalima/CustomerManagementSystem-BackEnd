@@ -57,12 +57,12 @@ const pool = new Pool({
   port: 5432,
 });
 ```
-## Listar todas as todas as.
+## Listar todos os clientes.
 
 *method : GET*
 
 xml
-http://localhost:5001/clientes/ListCustomers
+http://localhost:5001/clientes/listcustomers
 
 
 *Formato do Retorno*
