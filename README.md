@@ -75,7 +75,7 @@ Execute o script DDL no PostgreSQL para configurar a estrutura do banco de dados
 
 #Inicie o servidor:
 
-npm start
+npm run start
 
 O servidor estará disponível em http://localhost:5001/clients/.
 
