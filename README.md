@@ -57,3 +57,31 @@ const pool = new Pool({
   port: 5432,
 });
 ```
+## Listar todas as todas as.
+
+*method : GET*
+
+xml
+http://localhost:5001/clientes/ListCustomers
+
+
+*Formato do Retorno*
+
+xml
+[
+		{
+		    "name": "Vitor",
+		    "telefone": (11)000000000,
+		    "email": "teste@gmail.com"
+        "coord_x": "1"
+        "coord_y": "2"
+		}
+		{
+		   "name": "Jo'",
+		    "telefone": (11)111111111,
+		    "email": "teste12@gmail.com"
+        "coord_x": "3"
+        "coord_y": "7"
+		}
+		....
+]
