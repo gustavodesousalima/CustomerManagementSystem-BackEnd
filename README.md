@@ -24,19 +24,24 @@ $ cd customermanagementsystem-backend
 # Instale as dependências
 $ npm install
 
-#Acesse o .env para configurar informaçoes
-sobre o seu banco de dados MySQL
-
 #DDL (Data Definition Language) no Projeto:
 
 O arquivo src/config/create_table_customers.sql contém o script DDL necessário para criar a tabela do banco de dados. Certifique-se de executar este script no PostgreSQL para configurar a estrutura do banco de dados.
 
-psql -U <seu-usuario> -h <seu-host> -d <seu-banco-de-dados> -W -a -f src/config/create_table_customers.sql
+1. Abra o terminal e acesse a pasta do projeto:
+
+   ```bash
+   $ cd customermanagementsystem-backend
+
+Execute o script DDL no PostgreSQL para configurar a estrutura do banco de dados. Substitua <seu-usuario>, <seu-host>, <seu-banco-de-dados> pelos seus próprios valores:
+
+ $ psql -U <seu-usuario> -h <seu-host> -d <seu-banco-de-dados> -W -a -f src/config/create_table_customers.sql
+
 
 #Inicie o servidor:
 npm start
 
-O servidor estará disponível em http://localhost:5001/clientes/.
+O servidor estará disponível em http://localhost:5001/clients/.
 
 Observação: Certifique-se de que o servidor backend esteja em execução para permitir
 a comunicação adequada com o frontend. Ambos os servidores devem estar em execução 
@@ -62,14 +67,14 @@ const pool = new Pool({
 *method : GET*
 
 json
-http://localhost:5001/clientes/listcustomers
+http://localhost:5001/clients/getcustomers
 
 
 *Formato do Retorno*
 
 		{
 		    "name": "Vitor",
-		    "telefone": (11)000000000,
+		    "telephone": (11)000000000,
 		    "email": "teste@gmail.com",
         	    "coord_x": "1",
         	    "coord_y": "2"
@@ -77,9 +82,24 @@ http://localhost:5001/clientes/listcustomers
   
 		{
 		   "name": "João",
-		    "telefone": (11)111111111,
+		    "telephone": (11)111111111,
 		    "email": "teste12@gmail.com",
         	    "coord_x": "3",
                 "coord_y": "7"
 		}
 		....
+## Criação de cliente
+
+*method : POST*
+
+json
+http://localhost:5001/clients/registercustomer
+
+
+		{ 
+			"name":"gustavo", 
+ 			"email":"jvalves217@gmail.com", 
+ 			"telephone":"123456",
+ 			"coord_x":"4", 
+ 			"coord_y":"4" 
+		}

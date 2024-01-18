@@ -4,7 +4,7 @@ import { getCustomers, registerCustomer, calculateRoute } from '../controllers/c
 const router = express.Router();
 
 // Rota para listar os clientes
-router.get('/getscustomers', getCustomers);
+router.get('/getcustomers', getCustomers);
 
 // Rota para cadastrar um cliente
 router.post('/registercustomer', registerCustomer);
