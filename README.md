@@ -61,27 +61,25 @@ const pool = new Pool({
 
 *method : GET*
 
-xml
+json
 http://localhost:5001/clientes/listcustomers
 
 
 *Formato do Retorno*
 
-xml
-[
 		{
 		    "name": "Vitor",
 		    "telefone": (11)000000000,
 		    "email": "teste@gmail.com"
-        "coord_x": "1"
-        "coord_y": "2"
-		}
+        	    "coord_x": "1"
+        	    "coord_y": "2"
+		},
+  
 		{
 		   "name": "Jo'",
 		    "telefone": (11)111111111,
 		    "email": "teste12@gmail.com"
-        "coord_x": "3"
-        "coord_y": "7"
+        	    "coord_x": "3"
+                    "coord_y": "7"
 		}
 		....
-]
