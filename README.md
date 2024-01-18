@@ -15,22 +15,19 @@ Antes de começar, certifique-se de ter o seguinte instalado em sua máquina:
 
    ```bash
    git clone https://github.com/gustavodesousalima/CustomerManagementSystem-BackEnd.git
+
 Acesse o diretório do projeto:
 
-bash
-Copy code
 cd customermanagementsystem-backend
+
 Instale as dependências:
 
-bash
-Copy code
 npm install
+
 Configure o banco de dados PostgreSQL:
 
 Abra o arquivo src/config/db.js e atualize as informações de conexão com o banco de dados (host, user, password, database).
 
-javascript
-Copy code
 const pool = new Pool({
   user: 'seu-usuario',
   host: 'localhost',
@@ -38,11 +35,10 @@ const pool = new Pool({
   password: 'sua-senha',
   port: 5432,
 });
+
 Inicie o servidor:
 
-bash
-Copy code
-npm start
+npm run start
 
 O servidor estará disponível em http://localhost:5001/clientes/.
 
