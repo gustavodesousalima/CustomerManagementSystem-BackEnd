@@ -46,13 +46,16 @@ const pool = new Pool({
   port: 5432,
 });
 ```
+## Caso tenha interesse em usar o postgres-client para criar a tabela no banco de dados
 
 Execute o script DDL no PostgreSQL para configurar a estrutura do banco de dados. Substitua <seu-usuario>, <seu-host>, <seu-banco-de-dados> pelos seus próprios valores:
 
  $ psql -U <seu-usuario> -h <seu-host> -d <seu-banco-de-dados> -W -a -f src/config/create_table_customers.sql
 
+### Observação: Vale lembrar que a configuração do postgres-client, vai depender do sistema operacional que o usuário estiver utilizando.
 
 #Inicie o servidor:
+
 npm start
 
 O servidor estará disponível em http://localhost:5001/clients/.
