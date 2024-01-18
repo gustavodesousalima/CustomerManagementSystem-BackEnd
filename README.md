@@ -30,7 +30,7 @@ O arquivo src/config/create_table_customers.sql contém o script DDL necessário
 
 bash
 Copy code
-psql -U seu-usuario -d seu-banco-de-dados -a -f src/ddl.sql
+psql -U seu-usuario -d seu-banco-de-dados -a -f src/config/create_table_customers.sql
 
 Configure o banco de dados PostgreSQL:
 
