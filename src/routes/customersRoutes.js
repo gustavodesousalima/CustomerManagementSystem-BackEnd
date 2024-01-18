@@ -4,12 +4,12 @@ import { getCustomers, registerCustomer, calculateRoute } from '../controllers/c
 const router = express.Router();
 
 // Rota para listar os clientes
-router.get('/get', getCustomers);
+router.get('/getscustomers', getCustomers);
 
 // Rota para cadastrar um cliente
-router.post('/post', registerCustomer);
+router.post('/registercustomer', registerCustomer);
 
 // Nova rota para calcular a rota mais curta
-router.get('/calculate', calculateRoute);
+router.get('/calculaterouter', calculateRoute);
 
 export default router;
