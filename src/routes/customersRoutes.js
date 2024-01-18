@@ -1,11 +1,11 @@
 import express, { Router } from 'express';
 const router = express.Router();
-import { getCustomers, registerCustomer } from '../controllers/customersControllers';
+import { getCustomers, registerCustomer } from '../controllers/customersControllers.js';
 
 // Rota para listar os clientes
-router.get('/', listarClientes);
+router.get('/', getCustomers);
 
 // Rota para cadastrar um cliente
-router.post('/', cadastrarCliente);
+router.post('/', registerCustomer);
 
-export default Router;
+export default router; // Alterado de Router para router
