@@ -28,8 +28,6 @@ DDL (Data Definition Language) no Projeto:
 
 O arquivo src/config/create_table_customers.sql contém o script DDL necessário para criar a tabela do banco de dados. Certifique-se de executar este script no PostgreSQL para configurar a estrutura do banco de dados.
 
-bash
-Copy code
 psql -U seu-usuario -d seu-banco-de-dados -a -f src/config/create_table_customers.sql
 
 Configure o banco de dados PostgreSQL:
