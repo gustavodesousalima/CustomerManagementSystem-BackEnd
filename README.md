@@ -2,6 +2,25 @@
 
 Este é o repositório do backend para o Customer Management System, o sistema de gerenciamento de clientes desenvolvido como parte do teste de programação para a vaga de desenvolvedor na Facilita Jurídico.
 
+## Ferramentas utilizadas
+
+
+Express:
+Versão: ^4.18.2
+Descrição: Framework web para Node.js que simplifica o desenvolvimento de aplicativos web.
+
+Body-Parser:
+Versão: ^1.20.2
+Descrição: Middleware para Express que facilita o processamento de dados do corpo das solicitações HTTP.
+
+CORS (Cross-Origin Resource Sharing):
+Versão: ^2.8.5
+Descrição: Middleware para Express que permite o controle de acesso a recursos em uma aplicação web de um domínio diferente.
+
+pg (node-postgres):
+Versão: ^8.11.3
+Descrição: Cliente PostgreSQL para Node.js, permitindo interação com bancos de dados PostgreSQL.
+
 ## Pré-requisitos 🛠️
 
 Antes de começar, certifique-se de ter o seguinte instalado em sua máquina:
