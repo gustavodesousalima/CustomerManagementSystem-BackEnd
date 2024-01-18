@@ -8,4 +8,4 @@ router.get('/', getCustomers);
 // Rota para cadastrar um cliente
 router.post('/', registerCustomer);
 
-export default router; // Alterado de Router para router
+export default router;
