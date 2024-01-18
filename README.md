@@ -80,6 +80,6 @@ http://localhost:5001/clientes/listcustomers
 		    "telefone": (11)111111111,
 		    "email": "teste12@gmail.com",
         	    "coord_x": "3",
-                    "coord_y": "7"
+                "coord_y": "7"
 		}
 		....
