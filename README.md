@@ -8,44 +8,9 @@ Antes de começar, certifique-se de ter o seguinte instalado em sua máquina:
 
 - Node.js
 - PostgreSQL
-- PostgreSQL Client
-
+  
 ### Instalando o PostgreSQL
 https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
-
-### Instalando o PostgreSQL Client
-
-Para executar comandos SQL no banco de dados, é necessário ter o PostgreSQL Client instalado. Siga as instruções abaixo para instalar o cliente:
-
-### Em sistemas Debian/Ubuntu:
-
-```jsx
-sudo apt-get update
-sudo apt-get install postgresql-client
-```
-
-### Em sistemas Red Hat/Fedora:
-
-```jsx
-bash
-Copy code
-sudo dnf install postgresql
-```
-
-### Em sistemas MacOS:
-
-```jsx
-bash
-Copy code
-brew install postgresql
-```
-
-### Em sistemas Windows:
-
-```jsx
-Você pode baixar o PostgreSQL Client a partir do site oficial: 
-Download PostgreSQL Client
-```
 
 ## ****🎲 Getting Started****
 
