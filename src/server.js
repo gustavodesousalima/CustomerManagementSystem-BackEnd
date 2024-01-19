@@ -16,5 +16,5 @@ app.use(bodyParser.json());
 app.use('/clients', customersRoutes);
 
 app.listen(PORT, () => {
-    console.log(`Servidor rodando em http://localhost:${PORT}/clientes/`);
+    console.log(`Servidor rodando em http://localhost:${PORT}/clients/`);
 });
