@@ -50,7 +50,7 @@ O arquivo src/config/create_table_customers.sql contém o script DDL necessário
 1. Abra o terminal e acesse a pasta do projeto:
 
    ```bash
-   $ cd customermanagementsystem-backend
+   $ cd CustomerManagementSystem-BackEnd
 
    ### Configure o banco de dados PostgreSQL:
 
