@@ -73,7 +73,7 @@ Execute o script DDL no PostgreSQL para configurar a estrutura do banco de dados
 
 ### Observação: Vale lembrar que a configuração do postgres-client, vai depender do sistema operacional que o usuário estiver utilizando.
 
-#Inicie o servidor:
+# Inicie o servidor:
 
 npm run start
 
