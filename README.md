@@ -38,7 +38,7 @@ https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
 $ git clone https://github.com/gustavodesousalima/CustomerManagementSystem-BackEnd.git
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd customermanagementsystem-backend
+$ cd CustomerManagementSystem-BackEnd
 
 # Instale as dependências
 $ npm install
